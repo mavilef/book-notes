@@ -1,0 +1,6 @@
+p. 1: Just compilers are programs that translates from a program in source language into a program in target language.
+p. 2: An interesting thing is the description of a interpreter that the author gives, basically he defines an
+interpreter as a program that instear of getting a source program and producing a target program, which
+can be executed(producing outputs) in case of the target language being a machine language.
+The interpreter get the source program and an input and produces an output. directly.
+A really good question which it 
