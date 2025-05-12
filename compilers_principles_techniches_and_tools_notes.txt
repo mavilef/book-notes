@@ -3,4 +3,32 @@ p. 2: An interesting thing is the description of a interpreter that the author g
 interpreter as a program that instear of getting a source program and producing a target program, which
 can be executed(producing outputs) in case of the target language being a machine language.
 The interpreter get the source program and an input and produces an output. directly.
-A really good question which it 
+The author states that interpreters are much slower than compilers, i don't 
+know exactly why, but i know that from my experience, like python is much slower than C or golang.
+Apparently java is both, its compiled into byte code and then interpreted by JVM
+the advantage is being platform independent. Java is hybrid
+p. 3: It talks about compiler having other parts beyond just get the source language
+and convert to target, it opens the black box to just say that we have other steps
+and components, like the preprocessor, compiler, assembler, linker and loader,
+an interesting thing is the name relocatable machine code that the assembler produces
+'relocatable' here means that its not tied to any specific memory address
+like the instruction don't have an specific address is relative, and you 
+can link with other relocatable object files to make the final file.
+what i understood is
+preprocessor - expand macros and modify your source code
+compiler the this code and produces an assembly language code
+assembler - Gets the assembler and produces the "relocatable machine code"
+linker - Solve references from one file to another like when referencing libraries
+loader - puts everyfile together
+im not sure if linker produces new files or it just modify the ones
+p. 4: 
+It make some logical division between the compilation process, like
+analysis and synthesis, it can be called frontend and backend.
+aparently analysis part get the code and checks for grammar rules and builds some intermediate representation, it also makes some kind of symbol table. it describes that compiler works as a sequence of phases, and in each one transforming one representation into another.
+p. 5:
+the symbol table stores some information of the source program. there are machine-independent optimization which transforms the intermediate representation into a optimized one.
+The phases character stream (Lexical Analyzer) token stream (Syntax Analyser) syntax tree (Semantic Analyzer) syntax tree (IR Generator) IR (Machine Independent code optimizer) IR (Code generator) target machine code (Machine Dependent Code Optimizer) target machine code
+p. 6:
+The Lexical analyzer basically builds a sequence of lexemes, that for is just a mapping to the symbol table. What it does is basically tuples (name, attributes) where the name of the abstract symbol, and the value is the an entry in the symbol table, when it has some. for the operations the attribute is empty, so we have a stream of these things. for literal values have a different thing too
+p. 8:
+

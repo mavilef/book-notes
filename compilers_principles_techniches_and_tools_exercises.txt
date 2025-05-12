@@ -1,0 +1,13 @@
+[p. 3][Exercise 1.1.1]
+Compilers get a program in a source language and produces program in a target language, and if the target language happen to be an machine-language, you can execute and get some output.
+On the other hand, an interpreter get a source language and some input, and produces an output, so its actally designed for that
+[p. 3][Exercise 1.1.2]
+Compilers can be produce a machine-language code that produces output faster than the interpreter, but kind of hard to debug, and have not so good errors. Interpreters are better to debug.Another advantage of compiler is the protection of source code, since the original source code is not directly visible.
+Another for interpreter is that often interpreted languages are more portable
+[p. 3][Exercise 1.1.3]
+Assembly code are better to debug. it leaves the oportunity to manual optimization of assembly code.
+[p. 3][Exercise 1.1.4]
+C is really optimized, so you could actually convert an interpreted language into a compiled language, so it would take advantage of all perfomance optimizations that c ecosystem has.
+[p. 3][Exercise 1.1.5]
+Since the assemble get the assembly code and produces a "relocatable code" it must make all the addresses relative instead of absoulute, so you could merge with other relocatable code.
+the result of the assemble is actually machine-code, so it converts the instruction mnemonics to actual codes, the result is an object file
